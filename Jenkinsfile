@@ -3,7 +3,8 @@ pipeline{
     stages{
         stage ('build'){
             steps{
-                echo '${BUILD_NUMBER}'
+                echo 'Build number is: ${env.BUILD_NUMBER}'
+		echo 'My branch is: ${env.BRANCH_NAME}'
             }
         }
     }
