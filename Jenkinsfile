@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent Jenkins
     stages{
         stage ('build'){
             steps{
